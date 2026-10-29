@@ -1,6 +1,6 @@
 ---
 layout: runbook
-title: '#4471 · three problems in one ticket'
+title: '#4471 · two problems in one ticket'
 owner: mperazac
 status: draft
 reviewed: 2026-10-29
@@ -14,11 +14,11 @@ signature: v1.eyJzdWIiOiI1NTg3IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYX
 </script>
 
 [#4471](/kb/incidents/4471) was merged as one issue ("the parser reads dates month first"). The
-reports say otherwise. Read by tenant locale and booking form, they hold three problems, and one
+reports say otherwise. Read by tenant locale and booking form, they hold two problems, and one
 fix does not close them all.
 
 <Callout>
-Not one issue. Three tickets, filed in the
+Not one issue. Two tickets, filed in the
 [mega-s01e03-4471](https://github.com/mperazac/mega-s01e03-4471/issues) repo.
 </Callout>
 
@@ -29,16 +29,13 @@ Not one issue. Three tickets, filed in the
 2. **booking-v3 shows `MM/DD/YYYY` under the date field** ([issue 2](https://github.com/mperazac/mega-s01e03-4471/issues/2)).
    Day-first tenants on that form type month first, as the hint tells them. This is a form bug, so the
    parser fix will not close it.
-3. **Bookings move by one day** ([issue 3](https://github.com/mperazac/mega-s01e03-4471/issues/3)).
-   Five reports describe a one-day shift, not a month and day swap. Suspected time zone bug, not
-   confirmed. The table below files them under `parser`, as the desk did (`desk-notes.json`).
 
 ## What was merged
 
 <CauseTable ticket={4471} />
 
-The table counts by cause in the code. Problem 3 sits inside the `parser` row, so the issue counts
-are 374 for problem 1 and 5 for problem 3.
+The table counts by cause in the code, as the desk exported it. Five reports read as a one-day move.
+They are counted under `parser`, where they are filed, and footnoted.
 
 ## Why the intake tag misled us
 
