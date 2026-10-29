@@ -4,7 +4,7 @@ title: '#4471 · three problems in one ticket'
 owner: mperazac
 status: draft
 reviewed: 2026-10-29
-signature: mperazac
+signature: v1.eyJzdWIiOiI1NTg3IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYXQiOjE3OTMzMTc4ODMsImV4cCI6MTc5MzQwNDI4M30.LsiJ_-xjP4AMi_p_TtyUjnlBsl4va9t8yFv2dIG33hc
 ---
 
 <script>
